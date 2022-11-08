@@ -44,7 +44,7 @@ public class Grenade : MonoBehaviour
         foreach(Collider col in colliders) {
             if(col.tag == "Enemy") {
                 //Trừ máu enemy
-                Enemy zb = col.GetComponent<Enemy>();
+                EnemyHealth zb = col.GetComponent<EnemyHealth>();
                 if(zb != null) {
                     zb.LoseHeal(damage);
                 }    

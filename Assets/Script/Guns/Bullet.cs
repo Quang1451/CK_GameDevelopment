@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
         }
 
         if(collision.gameObject.tag == "Enemy") {
-            Enemy zb = collision.gameObject.GetComponent<Enemy>();
+            EnemyHealth zb = collision.gameObject.GetComponent<EnemyHealth>();
             if(zb != null) {
                 zb.LoseHeal(Random.Range(minDamage, maxDamage));
                 if(bloodHole != null) {

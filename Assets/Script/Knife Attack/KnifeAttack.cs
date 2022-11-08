@@ -52,10 +52,11 @@ public class KnifeAttack : MonoBehaviour
 
     void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.tag == "Enemy" && timeDamage){
-            Enemy zb = collision.gameObject.GetComponent<Enemy>();
+            EnemyHealth zb = collision.gameObject.GetComponent<EnemyHealth>();
             if(zb != null) {
                 zb.LoseHeal(damage);
             }
+
         }
 
         if(collision.gameObject.tag == "ExplosionItem") {
