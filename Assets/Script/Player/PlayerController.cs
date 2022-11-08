@@ -14,25 +14,50 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject flashlight;
     [SerializeField]
+    private GunsInventory inventory;
+    [SerializeField]
+    private GameObject throwPoint;
+    [SerializeField]
+    private GameObject knifeAttackPoint;
+    [SerializeField]
     private Transform groundCheck;
     [SerializeField]
-    public LayerMask groundMask;
+    private LayerMask groundMask;
+    [SerializeField]
+    private float timeResetThorw, throwForce;
+    [SerializeField]
+    private float timeResetAttack1, timeResetAttack2, timeInCombo;
+
+
+    [Header("Prefab Object")]
+    [SerializeField]
+    private GameObject grenade;
 
     private CharacterController controller;
     private PlayerData dataPlayer;
     private Vector3 velogity;
     private bool isGrounded;
     private float speed;
-    private AudioSource moveSounds;
+    private AudioSource moveSource, throwSourse, knifeSource;
     private float xRotation, yRotation;
+    private float _resetThrow, _resetAttack, _resetCombo;
     
     // Start is called before the first frame update
     void Start()
     {
-        controller = gameObject.GetComponent<CharacterController>();
-        dataPlayer = gameObject.GetComponent<PlayerData>();
+        controller = GetComponent<CharacterController>();
+        dataPlayer = GetComponent<PlayerData>();
+        moveSource = GetComponent<AudioSource>();
         speed = dataPlayer.moveSpeed;
-        moveSounds = GetComponent<AudioSource>();
+
+        //Lấy nguồn âm thanh của điểm ném lựu đạn     
+        if(throwPoint)
+            throwSourse = throwPoint.GetComponent<AudioSource>();
+        
+        if(knifeAttackPoint)
+            knifeSource = knifeAttackPoint.GetComponent<AudioSource>();
+
+        _resetAttack = _resetCombo = _resetThrow = Time.time;
 
         //Đảm bảo con trỏ chuột bị khóa ở giữa màn hình
         Cursor.lockState = CursorLockMode.Locked;
@@ -42,21 +67,17 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {   
+        CheckGunAnimation();
         RotateCamera();
         Flashlight();
-        GameObject inventory = GameObject.Find("GunsInventory");
-        for(int i = 0; i < inventory.transform.childCount; i++ ){
-            if(inventory.transform.GetChild(i).gameObject.activeSelf == true) {
-                animator = inventory.transform.GetChild(i).GetComponent<Animator>();
-                break;
-            }
-        }
+        KnifeAttack();
+        ThrowGrenade();
+        SitAndStand();
     }
 
     void FixedUpdate()
     {      
         Movement();
-        SitAndStand();
         Jump();     
     }
 
@@ -89,13 +110,13 @@ public class PlayerController : MonoBehaviour
         //Chạy animation di chuyển
         if(horizontalInput!= 0 || verticalInput!=0) {
             animator.SetBool("Walk", true);   
-            if(!moveSounds.isPlaying)
-                moveSounds.Play();
+            if(!moveSource.isPlaying)
+                moveSource.Play();
         }
         else {
             if(animator.GetBool("Walk") == true)
                 animator.SetBool("Walk", false);
-            moveSounds.Stop();
+            moveSource.Stop();
         }
 
         //Tính tốc độ duy chuyển 
@@ -133,4 +154,53 @@ public class PlayerController : MonoBehaviour
             flashlight.SetActive(!flashlight.active);
         }
     }
+
+    void CheckGunAnimation() {
+        GameObject inventory = GameObject.Find("GunsInventory");
+        for(int i = 0; i < inventory.transform.childCount; i++ ){
+            if(inventory.transform.GetChild(i).gameObject.activeSelf == true) {
+                animator = inventory.transform.GetChild(i).GetComponent<Animator>();
+                break;
+            }
+        }
+    }
+
+    void KnifeAttack() {
+        if(Input.GetKeyDown(KeyCode.F) && Time.time > _resetAttack) {
+            if(Time.time < _resetCombo) {
+                animator.Play("Knife Attack 1");
+                knifeSource.clip = dataPlayer.knifeSounds[1];
+                knifeSource.Play();
+                _resetAttack = Time.time + timeResetAttack2;
+            }
+            else{
+                animator.Play("Knife Attack 2");
+                knifeSource.clip = dataPlayer.knifeSounds[0];
+                knifeSource.Play();
+                _resetCombo = Time.time + timeInCombo;
+                _resetAttack = Time.time + timeResetAttack1;
+            }
+            Collider[] hit = Physics.OverlapSphere(knifeAttackPoint.transform.position,0.15f);
+            foreach(Collider enemy in hit) {
+                Debug.Log(enemy.gameObject.tag);
+            }
+        }
+    }
+    
+    void ThrowGrenade() {
+        if (Input.GetKeyDown(KeyCode.G) && Time.time > _resetThrow && inventory.CheckHasGrenade()) {
+            throwSourse.clip = (dataPlayer.throwSounds)[Random.Range(0,(dataPlayer.throwSounds).Length)];
+            throwSourse.Play();
+            Invoke("Throw",0.5f);
+            _resetThrow = Time.time + timeResetThorw;
+        } 
+    }
+
+    void Throw() {
+        animator.Play("Grenade Throw");
+        GameObject currentGrenade = Instantiate(grenade, throwPoint.transform.position, throwPoint.transform.rotation);
+        currentGrenade.GetComponent<Rigidbody>().AddForce(throwPoint.transform.forward * throwForce, ForceMode.VelocityChange);
+        inventory.LoseGrenade();
+    }
+
 }

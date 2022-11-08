@@ -11,6 +11,10 @@ public class PlayerData : MonoBehaviour
     public float moveSpeed = 5f;
     public float gravity = -10f;
 
+    [Header("Audio")]
+    public AudioClip[] throwSounds;
+    public AudioClip[] knifeSounds;
+
     [Header("Player Data")]
     public float jumgHeight = 1f;
     public float groundDistance = 0.4f;

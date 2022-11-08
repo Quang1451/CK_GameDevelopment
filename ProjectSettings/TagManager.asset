@@ -14,6 +14,7 @@ TagManager:
   - ExplosiveBarrel
   - GasTank
   - ExplosionItem
+  - Target
   layers:
   - Default
   - TransparentFX
