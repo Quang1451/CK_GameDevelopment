@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
     [Header("Reference")]
     public GameObject bulletHole;  
     public GameObject bloodHole;
+    public LayerMask layer;
     void Awake()
     {   
         Destroy(gameObject,lifeBullet);
@@ -20,7 +21,7 @@ public class Bullet : MonoBehaviour
 
     //Gây dame và để lại dấu lổ đạn
     void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.layer == 7){
+        if(collision.gameObject.layer == 9){
             if(bulletHole != null) {
                 GameObject currentHole = Instantiate(bulletHole, this.transform.position, this.transform.rotation);
                 Destroy(currentHole,lifeHole);

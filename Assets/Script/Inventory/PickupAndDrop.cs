@@ -14,6 +14,7 @@ public class PickupAndDrop : MonoBehaviour
     public Camera fpsCam;
     public PlayerData healthPlayer;
     public Transform pointThrowItem;
+    public GameObject UI_Aim, UI_E;
     [Header("Option")]
     public float distance;
     public LayerMask layerMask;
@@ -36,6 +37,7 @@ public class PickupAndDrop : MonoBehaviour
 
         if(canPickup && Input.GetKeyDown(KeyCode.E) && item !=null) {
             Pickup();
+            SetActivateUI(true,false);
         }
     }
 
@@ -45,13 +47,15 @@ public class PickupAndDrop : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, distance, layerMask)) {
             item = hit.transform.gameObject;
-            item.GetComponent<Outline>().enabled = true;
+            //item.GetComponent<Outline>().enabled = true;
             canPickup = true;
+            SetActivateUI(false,true);
         }
         else if(item != null) {
-            item.GetComponent<Outline>().enabled = false;
+            //item.GetComponent<Outline>().enabled = false;
             canPickup = false;
             item = null;
+            SetActivateUI(true,false);
         }
     }
 
@@ -140,5 +144,10 @@ public class PickupAndDrop : MonoBehaviour
                 break;
         }
         
+    }
+
+    void SetActivateUI(bool aim, bool E_text) {
+        UI_Aim.SetActive(aim);
+        UI_E.SetActive(E_text);
     }
 }

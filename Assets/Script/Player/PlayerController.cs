@@ -138,11 +138,11 @@ public class PlayerController : MonoBehaviour
 
     void SitAndStand() {
         //Thay đổi tốc độ đứng và ngồi
-        if(Input.GetKeyUp(KeyCode.LeftShift)){
+        if(Input.GetKeyUp(KeyCode.LeftControl)){
             controller.height = dataPlayer.normalHeight;
             speed = dataPlayer.moveSpeed;
         }
-        if(Input.GetKeyDown(KeyCode.LeftShift)){
+        if(Input.GetKeyDown(KeyCode.LeftControl)){
             controller.height = dataPlayer.crouchHeight;
             speed = speed / 4;
         }
@@ -203,4 +203,8 @@ public class PlayerController : MonoBehaviour
         inventory.LoseGrenade();
     }
 
+    void OnTriggerEnter(Collider other) {
+        if(other.gameObject.name == "End")
+            Debug.Log("End Game");    
+    }
 }

@@ -213,8 +213,11 @@ MonoBehaviour:
   maxDamage: 55
   bulletHole: {fileID: 8384837740420047938, guid: 7d46d7a3d70151e4680f97e7763faff4,
     type: 3}
-  bloodHole: {fileID: 7197364119256280212, guid: b86b5040dfeaab443a7bc75184398e6e,
+  bloodHole: {fileID: 3894670819349753528, guid: b86b5040dfeaab443a7bc75184398e6e,
     type: 3}
+  layer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!54 &7739797014022535800
 Rigidbody:
   m_ObjectHideFlags: 0
