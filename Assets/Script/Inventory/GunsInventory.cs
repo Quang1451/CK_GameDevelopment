@@ -5,13 +5,6 @@ using TMPro;
 
 public class GunsInventory : MonoBehaviour
 {
-    [Header("Ammo")]
-    public int rifleAmmo = 0;
-    public int shotgunAmmo = 0;
-    public int submachineAmmo = 0;
-    public int pistolAmmo = 0;
-    public int grenade = 0;
-
     [Header("Graphic")]
     public TextMeshProUGUI rifleAmmoDisplay;
     public TextMeshProUGUI shotgunAmmoDisplay;
@@ -19,14 +12,20 @@ public class GunsInventory : MonoBehaviour
     public TextMeshProUGUI pistolAmmoDisplay;
     public TextMeshProUGUI grenadeDisplay;
 
-    private GameObject[] gunsHaving = new GameObject[3];
+    private GameObject[] gunsHaving;
     private int previousWeapon;
     private int currentWeapon;
+    public int rifleAmmo, shotgunAmmo, submachineAmmo, pistolAmmo, grenade;
     void Awake()
     {
+        rifleAmmo = PlayerDataSetting.Instance.RifleAmmo;
+        shotgunAmmo = PlayerDataSetting.Instance.ShotgunAmmo;
+        submachineAmmo = PlayerDataSetting.Instance.SubmachineAmmo;
+        pistolAmmo = PlayerDataSetting.Instance.PistolAmmo;
+        grenade = PlayerDataSetting.Instance.Grenade;
         //Đặt súng lục làm súng mặc định
-        gunsHaving[0] = transform.Find("Glock").gameObject;
-        //selectGun = gunsHaving[0];
+        gunsHaving = PlayerDataSetting.Instance.GunsHaving;
+        
         currentWeapon = 0;
 
         SelectWeapon();

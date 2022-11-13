@@ -29,7 +29,7 @@ public class PlayerData : MonoBehaviour
     private bool isDead;
 
     void Awake() {
-        health = maxHealth;
+        health = PlayerDataSetting.Instance.Health;
         isDead = false;
     }
 

@@ -404,7 +404,9 @@
 "Assets/Script/Player/PlayerController.cs"
 "Assets/Script/Player/PlayerData.cs"
 "Assets/Script/Player/PlayerHealth.cs"
+"Assets/Script/PlayerDataSetting.cs"
 "Assets/Script/ShowText.cs"
+"Assets/Script/SingletonScriptableObject.cs"
 "Assets/Script/Zombie/EnemyHealth.cs"
 "Assets/Script/Zombie/ZombieAI.cs"
 -langversion:9.0

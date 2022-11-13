@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf67537ae60af6c4ab4b7906716e2f87, type: 3}
+  m_Name: Player Data Setting
+  m_EditorClassIdentifier: 
+  Health: 200
+  RifleAmmo: 0
+  ShotgunAmmo: 0
+  SubmachineAmmo: 0
+  PistolAmmo: 0
+  Grenade: 0
+  GunsHaving:
+  - {fileID: 5589502383661578776, guid: df4e9f4291eb9cc4490ad5e0eb157e4d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
