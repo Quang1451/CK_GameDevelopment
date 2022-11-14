@@ -3496,16 +3496,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534b0f66da598d241be99722af6dcf45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rifleAmmo: 10
-  shotgunAmmo: 10
-  submachineAmmo: 10
-  pistolAmmo: 10
-  grenade: 10
   rifleAmmoDisplay: {fileID: 0}
   shotgunAmmoDisplay: {fileID: 0}
   submachineAmmoDisplay: {fileID: 0}
   pistolAmmoDisplay: {fileID: 0}
   grenadeDisplay: {fileID: 0}
+  rifleAmmo: 10
+  shotgunAmmo: 10
+  submachineAmmo: 10
+  pistolAmmo: 10
+  grenade: 10
 --- !u!114 &1815165355756452743
 MonoBehaviour:
   m_ObjectHideFlags: 0

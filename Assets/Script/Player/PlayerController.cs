@@ -202,9 +202,4 @@ public class PlayerController : MonoBehaviour
         currentGrenade.GetComponent<Rigidbody>().AddForce(throwPoint.transform.forward * throwForce, ForceMode.VelocityChange);
         inventory.LoseGrenade();
     }
-
-    void OnTriggerEnter(Collider other) {
-        if(other.gameObject.name == "End")
-            Debug.Log("End Game");    
-    }
 }
