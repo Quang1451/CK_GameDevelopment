@@ -51,15 +51,15 @@ public class LoadingScreenBarSystem : MonoBehaviour {
 
         // Continue until the installation is completed
         while (async.isDone == false)
-        {
-            bar.transform.localScale = new Vector3(async.progress,0.9f,1);
+        {   
+            var result = Mathf.Clamp01(async.progress / .9f);
+            bar.transform.localScale = new Vector3(result,0.9f,1);
 
             if (loadingText != null)
-                loadingText.text = (100 * bar.transform.localScale.x).ToString("####") + "%" ;
+                loadingText.text = (100 * result).ToString("####") + "%" ;
 
-            if (async.progress == 0.9f)
+            if (result == 1)
             {
-                bar.transform.localScale = new Vector3(1, 0.9f, 1);
                 async.allowSceneActivation = true;
             }
             yield return null;

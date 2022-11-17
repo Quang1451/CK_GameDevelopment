@@ -64,4 +64,7 @@ public class PlayerData : MonoBehaviour
         CheckHealth();
     }
 
+    public int GetHealth() {
+        return health;
+    }
 }

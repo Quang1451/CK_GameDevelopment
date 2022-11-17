@@ -12,4 +12,12 @@ public class PlayerDataSetting : SingletonScriptableObject<PlayerDataSetting>
     public int PistolAmmo;
     public int Grenade;
     public GameObject[] GunsHaving;
+
+    public GameObject[] GunsHavingDefault;
+
+    public void DefaultData() {
+        Health = 200;
+        RifleAmmo = ShotgunAmmo = SubmachineAmmo = PistolAmmo = Grenade = 0;
+        GunsHaving = GunsHavingDefault;
+    }
 }

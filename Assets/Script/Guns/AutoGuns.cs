@@ -25,6 +25,7 @@ public abstract class AutoGuns : MonoBehaviour
     [Header("Audio")]
     public AudioClip[] gunSounds;
 	public AudioSource audioSource;
+    public AudioSource audioSource2 ;
     
     [Header("Guns data")]
     //Lực bắn và lực hướng lên
@@ -39,6 +40,11 @@ public abstract class AutoGuns : MonoBehaviour
     private bool shooting, readyToShoot, reloading;
     //bug fixxing
     private bool allowInvoke = true;
+
+    void OnEnable() {
+        if(audioSource2 != null)
+            AudioManager.Instance.PlayAudio(audioSource2, audioSource2.clip);
+    }
     
     public void Awake() {
         animator = GetComponent<Animator>();
@@ -70,8 +76,9 @@ public abstract class AutoGuns : MonoBehaviour
         //Kiểm tra player bấm nut nạp đạn
         if(Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading && bulletsPertap > 0){
             animator.Play("Reload Ammo Left");
-            audioSource.clip = gunSounds[1];
-            audioSource.Play();
+            AudioManager.Instance.PlayAudio(audioSource, gunSounds[1]);
+            /* audioSource.clip = gunSounds[1];
+            audioSource.Play(); */
             Reload();
         }
            
@@ -79,16 +86,18 @@ public abstract class AutoGuns : MonoBehaviour
         //Tự động nạp đạn khi hết đạn
         if(readyToShoot && !reloading && bulletsLeft <= 0 && bulletsPertap > 0) {
             animator.Play("Reload Out Of Ammo");
-            audioSource.clip = gunSounds[2];
-            audioSource.Play();
+            AudioManager.Instance.PlayAudio(audioSource, gunSounds[2]);
+            /* audioSource.clip = gunSounds[2];
+            audioSource.Play(); */
             Reload();
         }
             
         //Kiểm tra player có nhấn phím bấn và sẵn sàng bắn
         if(readyToShoot && shooting && !reloading && bulletsLeft > 0) {
             Shoot();
-            audioSource.clip = gunSounds[0];
-            audioSource.Play();
+            AudioManager.Instance.PlayAudio(audioSource, gunSounds[0]);
+            /* audioSource.clip = gunSounds[0];
+            audioSource.Play(); */
             if(Input.GetKey(KeyCode.Mouse1))
                 animator.Play("Aim Fire",0,0.0f);
             else

@@ -74,8 +74,9 @@ public class Shotgun : MonoBehaviour
             reloading = true;
             animator.SetBool("Finish",false);
             animator.Play("Reload Open");
-            audioSource.clip = gunSounds[1];
-            audioSource.Play();
+            AudioManager.Instance.PlayAudio(audioSource, gunSounds[1]);
+            /* audioSource.clip = 
+            audioSource.Play(); */
             Invoke("Reload", reloadTimeOpen);
         }
            
@@ -85,22 +86,26 @@ public class Shotgun : MonoBehaviour
             reloading = true;
             animator.SetBool("Finish",false);
             animator.Play("Reload Open");
-            audioSource.clip = gunSounds[1];
-            audioSource.Play();
+            AudioManager.Instance.PlayAudio(audioSource, gunSounds[1]);
+            /* audioSource.clip = gunSounds[1];
+            audioSource.Play(); */
             Invoke("Reload", reloadTimeOpen);
         }
             
         //Kiểm tra player có nhấn phím bấn và sẵn sàng bắn
         if(readyToShoot && shooting && !reloading && bulletsLeft > 0) {
             Shoot();
-            audioSource.clip = gunSounds[0];
-            audioSource.Play();
+            AudioManager.Instance.PlayAudio(audioSource, gunSounds[0]);
+            /* audioSource.clip = gunSounds[0];
+            audioSource.Play(); */
             if(Input.GetKey(KeyCode.Mouse1))
                 animator.Play("Aim Fire",0,0.0f);
             else
                 animator.Play("Fire",0,0.0f);
-            audioSourceReadyToShot.clip = gunSounds[3];
-            audioSourceReadyToShot.Play();
+
+            AudioManager.Instance.PlayAudio(audioSourceReadyToShot, gunSounds[3]);
+            /* audioSourceReadyToShot.clip = gunSounds[3];
+            audioSourceReadyToShot.Play(); */
         }
     }
 
@@ -153,8 +158,9 @@ public class Shotgun : MonoBehaviour
 
     private void Reload() {
         animator.Play("Insert");
-        audioSource.clip = gunSounds[2];
-        audioSource.Play();
+        AudioManager.Instance.PlayAudio(audioSource, gunSounds[2]);
+        /* audioSource.clip = gunSounds[2];
+        audioSource.Play(); */
         Invoke("ReloadFinsihed", 0.55f);
     }
 
@@ -166,8 +172,9 @@ public class Shotgun : MonoBehaviour
         GetAmmo();
         if (bulletsPertap ==0 || bulletsLeft == magazineSize || Input.GetKey(KeyCode.Mouse0)) {
             animator.SetBool("Finish",true);
-            audioSource.clip = gunSounds[3];
-            audioSource.Play();
+            AudioManager.Instance.PlayAudio(audioSource, gunSounds[3]);
+            /* audioSource.clip = gunSounds[3];
+            audioSource.Play(); */
             Invoke("ReloadAllFinish",1);
         }
         else { 

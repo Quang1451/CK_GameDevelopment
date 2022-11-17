@@ -20,5 +20,9 @@ MonoBehaviour:
   Grenade: 0
   GunsHaving:
   - {fileID: 5589502383661578776, guid: df4e9f4291eb9cc4490ad5e0eb157e4d, type: 3}
+  - {fileID: 8058347154774153076, guid: acfaaa2fbabca1d4f86baf8054370097, type: 3}
+  - {fileID: 0}
+  GunsHavingDefault:
+  - {fileID: 5589502383661578776, guid: df4e9f4291eb9cc4490ad5e0eb157e4d, type: 3}
   - {fileID: 0}
   - {fileID: 0}
