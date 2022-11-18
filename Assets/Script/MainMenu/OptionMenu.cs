@@ -1,14 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class OptionMenu : MonoBehaviour
 {
     Animator animator;
-    // Start is called before the first frame update
-    void Start()
-    {
+    [Header("Volume Setting")]
+    [SerializeField] private Slider volumeSlider = null;
+    [SerializeField] private TMP_Text volumeTextValue = null;
+    private float settingVolume;
+    
+
+    [Header("Graphics Setting")]
+    [SerializeField] private TMP_Dropdown resolutionDropdown;
+    [SerializeField] private Toggle reesolutionToggle;
+    private bool isFullScreen;
+    int currentResolution;
+    Resolution[] resolutions;
+
+    void Start() {
         animator = GetComponent<Animator>();
+        resolutions = Screen.resolutions;
+        resolutionDropdown.ClearOptions();
+
+        List<string> options = new List<string>();
+
+        foreach(Resolution rslt in resolutions) {
+            string option = rslt.width + "x" + rslt.height;
+            options.Add(option);
+        }
+
+        resolutionDropdown.AddOptions(options);
+    }
+
+    void OnEnable() {
+        volumeSlider.value = AudioManager.Instance.volume;
+        volumeTextValue.text = AudioManager.Instance.volume.ToString("0.00");
+        resolutionDropdown.value = ScreenManager.Instance.optionScreen;
+        reesolutionToggle.isOn = ScreenManager.Instance.isFullScreen;
     }
 
     public void ChangAnimation(int valueChange){
@@ -17,15 +48,17 @@ public class OptionMenu : MonoBehaviour
         }
         if(valueChange == 1){
             animator.CrossFade("SoundButtonClick", 0.5f,0);
+            volumeSlider.value = AudioManager.Instance.volume;
+            volumeTextValue.text = AudioManager.Instance.volume.ToString("0.00");
+
         }
         if(valueChange == 2){
             animator.CrossFade("GraphicsButtonClick", 0.5f,0);
+            resolutionDropdown.value = ScreenManager.Instance.optionScreen;
+            reesolutionToggle.isOn = ScreenManager.Instance.isFullScreen;
         }
         if(valueChange == 3){
             animator.CrossFade("GamePlayButtonClick", 0.5f,0);
-        }
-        if(valueChange == 4){
-            animator.CrossFade("LanguageButtonClick", 0.5f,0);
         }
     }
 
@@ -36,9 +69,34 @@ public class OptionMenu : MonoBehaviour
     public void DisbleThisGameObject(){
         gameObject.SetActive(false);
     }
-    // Update is called once per frame
-    void Update()
+    
+    //Điều chỉnh âm thanh
+    public void SetVolume(float volume)
     {
+        settingVolume = volume;
+        volumeTextValue.text = volume.ToString("0.00");
+    }
+    //Đặt âm thanh đã điều chỉnh
+    public void VolumeApply(){
+        AudioManager.Instance.volume = settingVolume;
+    }
 
+    //Điều chỉnh đồ họa
+    public void SetResolution(int option) {
+        currentResolution = option;
+    }
+
+    public void SetDefaultGraphic() {
+        isFullScreen = ScreenManager.Instance.DefaulFullScreen;
+        currentResolution = ScreenManager.Instance.DefalultoptionScreen;
+        reesolutionToggle.isOn = isFullScreen;
+        resolutionDropdown.value = currentResolution;
+    }
+
+    public void GracphicApply() {
+        isFullScreen = reesolutionToggle.isOn;
+        ScreenManager.Instance.isFullScreen = isFullScreen;
+        ScreenManager.Instance.optionScreen = currentResolution;
+        Screen.SetResolution(resolutions[currentResolution].width, resolutions[currentResolution].height, ScreenManager.Instance.isFullScreen);
     }
 }

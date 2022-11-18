@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Audio Manager
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  volume: 1
+  volume: 0.28602678
   pitch: 1

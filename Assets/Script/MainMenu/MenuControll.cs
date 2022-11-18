@@ -7,18 +7,14 @@ using TMPro;
 
 public class MenuControll : MonoBehaviour
 {
-    [Header("Volume Setting")]
-    [SerializeField] private TMP_Text volumeTextValue = null;
-    [SerializeField] private Slider volumeSlider = null;
-    [SerializeField] private GameObject comfirmationPrompt = null;
-
     [Header("Levels To Load")]
     public int newGameLevel;
-    private string levelToLoad;
-
     
     [SerializeField] private GameObject noSavedGameDialog = null;
     [SerializeField] private LoadingScreenBarSystem load;
+
+    private string levelToLoad;
+    
     public void NewGameDialogYes(){
         PlayerDataSetting.Instance.DefaultData();
         load.loadingScreen(newGameLevel);
@@ -36,20 +32,5 @@ public class MenuControll : MonoBehaviour
 
     public void ExitButton(){
         Application.Quit();
-    }
-
-    //set am tham
-    public void SetVolume(float volume){
-        AudioListener.volume = volume;
-        volumeTextValue.text = volume.ToString("0.0");
-    }
-    public void VolumeApply(){
-        PlayerPrefs.SetFloat("masterVolume", AudioListener.volume);
-        StartCoroutine(ConfirmationBox());
-    }
-    public IEnumerator ConfirmationBox(){
-        comfirmationPrompt.SetActive(true);
-        yield return new WaitForSeconds(2);
-        comfirmationPrompt.SetActive(false);
     }
 }
