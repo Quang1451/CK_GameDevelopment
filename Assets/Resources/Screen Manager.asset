@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Screen Manager
   m_EditorClassIdentifier: Assembly-CSharp::ScreenManager
-  isFullScreen: 0
-  optionScreen: 0
+  optionScreen: 21
+  isFullScreen: 1
   DefaulFullScreen: 1
   DefalultoptionScreen: 21

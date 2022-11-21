@@ -8,6 +8,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    [Header("Pause UI")]
+    [SerializeField]
+    private GameObject pauseUI;
+    [SerializeField]
+    private GameObject optionUI;
     [Header("Reference")]
     [SerializeField]
     private GameObject camera;
@@ -43,7 +48,7 @@ public class PlayerController : MonoBehaviour
     private float _resetThrow, _resetAttack, _resetCombo;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         controller = GetComponent<CharacterController>();
         dataPlayer = GetComponent<PlayerData>();
@@ -73,6 +78,7 @@ public class PlayerController : MonoBehaviour
         KnifeAttack();
         ThrowGrenade();
         SitAndStand();
+        CheckPause();
     }
 
     void FixedUpdate()
@@ -201,5 +207,35 @@ public class PlayerController : MonoBehaviour
         GameObject currentGrenade = Instantiate(grenade, throwPoint.transform.position, throwPoint.transform.rotation);
         currentGrenade.GetComponent<Rigidbody>().AddForce(throwPoint.transform.forward * throwForce, ForceMode.VelocityChange);
         inventory.LoseGrenade();
+    }
+
+    void CheckPause() {
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            if(Time.timeScale > 0){
+                Pause();
+            }
+            else {
+                Resume();
+            }
+        }
+    }
+
+    public void Pause() {
+        Time.timeScale = 0;
+        pauseUI.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void Resume() {
+        if(!optionUI.activeSelf) {
+            Time.timeScale = 1;
+            pauseUI.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else {
+            optionUI.SetActive(false);
+        }
     }
 }
