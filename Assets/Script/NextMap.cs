@@ -7,6 +7,7 @@ public class NextMap : MonoBehaviour
     [SerializeField] private PlayerData dataPlayer;
     [SerializeField] private LoadingScreenBarSystem load;
     [SerializeField] private GunsInventory inventory;
+    [SerializeField] private int map;
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.name == "Player") {
@@ -16,7 +17,7 @@ public class NextMap : MonoBehaviour
             PlayerDataSetting.Instance.SubmachineAmmo= inventory.submachineAmmo;
             PlayerDataSetting.Instance.PistolAmmo = inventory.pistolAmmo;
             PlayerDataSetting.Instance.Grenade = inventory.grenade;
-            load.loadingScreen(1);
+            load.loadingScreen(map);
         }
     }
 }
