@@ -130,4 +130,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kind: Medkit
-  amount: 20
+  amount: 30

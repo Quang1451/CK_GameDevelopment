@@ -14,9 +14,8 @@ public class SingletonScriptableObject<T> : ScriptableObject where T: Scriptable
                 }
                 else if (assets.Length >1) {
                     Debug.LogError("Multiple instances of the singleton scriptable object found in the resrouces,");
-                    return null;
                 }
-                _instance = assets[0]; 
+                _instance = assets[0];
             }
             return _instance;
         }

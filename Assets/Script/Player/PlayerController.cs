@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         //Không hiển thị con trỏ chuột
         Cursor.visible = false;
+        Resume();
     }
 
     void Update()

@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12,17 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf67537ae60af6c4ab4b7906716e2f87, type: 3}
   m_Name: Player Data Setting
   m_EditorClassIdentifier: 
-  Health: 200
+  Health: 40
   RifleAmmo: 0
-  ShotgunAmmo: 0
+  ShotgunAmmo: 9
   SubmachineAmmo: 0
   PistolAmmo: 0
   Grenade: 0
+  Map: 3
+  timePickupGun: 2
   GunsHaving:
   - {fileID: 5589502383661578776, guid: df4e9f4291eb9cc4490ad5e0eb157e4d, type: 3}
+  - {fileID: 2903985354124780655, guid: b16e63855eb94b545a7ef46c079f188f, type: 3}
   - {fileID: 8058347154774153076, guid: acfaaa2fbabca1d4f86baf8054370097, type: 3}
-  - {fileID: 0}
-  GunsHavingDefault:
-  - {fileID: 5589502383661578776, guid: df4e9f4291eb9cc4490ad5e0eb157e4d, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}

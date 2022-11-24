@@ -216,4 +216,8 @@ public class GunsInventory : MonoBehaviour
         }
         return gunsHaving[slot].GetComponent<AutoGuns>().GetBulletLeft();
     }
+
+    public GameObject[] GetAllGuns() {
+        return gunsHaving;
+    }
 }

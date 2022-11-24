@@ -1,0 +1,565 @@
+Using pre-set license
+Built from '2021.3/release' branch; Version is '2021.3.12f1 (8af3c3e441b1) revision 9106371'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 8013 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/My_File/Mon_Hoc/HK1 2022-2023/GameDevelopment/CK2
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+58793
+Successfully changed project path to: D:/My_File/Mon_Hoc/HK1 2022-2023/GameDevelopment/CK2
+D:/My_File/Mon_Hoc/HK1 2022-2023/GameDevelopment/CK2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 217.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.12f1 (8af3c3e441b1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/My_File/Mon_Hoc/HK1 2022-2023/GameDevelopment/CK2/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 with Max-Q Design (ID=0x1f9d)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.15.1123
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008710 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 189.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.278 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1280ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (957ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (263ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (554ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (190ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008751 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\My_File\Mon_Hoc\HK1 2022-2023\GameDevelopment\CK2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\My_File\Mon_Hoc\HK1 2022-2023\GameDevelopment\CK2\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.276 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2277ms)
+		BeginReloadAssembly (208ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1803ms)
+			LoadAssemblies (172ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (647ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (126ms)
+			SetupLoadedEditorAssemblies (766ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (164ms)
+				ProcessInitializeOnLoadAttributes (505ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 2.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3707 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (1.3 MB). Loaded Objects now: 4184.
+Memory consumption went from 154.4 MB to 153.1 MB.
+Total: 5.597700 ms (FindLiveObjects: 0.599700 ms CreateObjectMapping: 0.516100 ms MarkObjects: 3.879200 ms  DeleteObjects: 0.600200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16935.404110 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big.prefab
+  artifactKey: Guid(20373c6cd77ef3840af30d9c058fbee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big.prefab using Guid(20373c6cd77ef3840af30d9c058fbee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b91497035451764eaa2ac598b341e95') in 0.297318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Demo_Scene_Components/Meshes/Demo_Scene_2_Meshes/stone_2.fbx
+  artifactKey: Guid(d438d46de37139847a2d629703ca608c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Demo_Scene_Components/Meshes/Demo_Scene_2_Meshes/stone_2.fbx using Guid(d438d46de37139847a2d629703ca608c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d08b31128bae5fc84e7fc120d9334d2') in 0.120685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small.prefab
+  artifactKey: Guid(67da585b6785b484dabda72df240d375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small.prefab using Guid(67da585b6785b484dabda72df240d375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe064a05e59612ad279d296095593396') in 0.052657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Demo_Scene_2/Stone 9.prefab
+  artifactKey: Guid(a4238451033dd5e44bcd881977ffb86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Demo_Scene_2/Stone 9.prefab using Guid(a4238451033dd5e44bcd881977ffb86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72a127d0144275458fac6c6c25f7f36') in 0.035870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Download/PolygonZombies/Models/SM_Chr_Attach_Axe_01.fbx
+  artifactKey: Guid(53dac8d9500972c4fae4b18adc2e54b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Models/SM_Chr_Attach_Axe_01.fbx using Guid(53dac8d9500972c4fae4b18adc2e54b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b995019cfdbd5123463edde9522a1de8') in 0.047197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Clown_Male_01.prefab
+  artifactKey: Guid(bb116383f6f80bf4d90cb48aeca8e8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Clown_Male_01.prefab using Guid(bb116383f6f80bf4d90cb48aeca8e8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e249474bd387026acba6f366bac13dab') in 0.223653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Demo_Scene_2/Stone 7.prefab
+  artifactKey: Guid(857a2db289f3fb842910b8432309f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Demo_Scene_2/Stone 7.prefab using Guid(857a2db289f3fb842910b8432309f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3bb4cfe7869c652f9a4be7f2414d27') in 0.027177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_plug.prefab
+  artifactKey: Guid(abf1f5179163bad469b298f28ca52e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_plug.prefab using Guid(abf1f5179163bad469b298f28ca52e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a0f7bc6f1898efe7f435a584e445cb') in 0.038013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Stone Wall.prefab
+  artifactKey: Guid(41f371db48be95f4cbca4d63d5c0b33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Stone Wall.prefab using Guid(41f371db48be95f4cbca4d63d5c0b33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7260ddb6815709f4ee3fb22f006dce75') in 0.035785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_with_side_offset_LOD1.fbx
+  artifactKey: Guid(ea33750d8062a5f40853d5a678f98727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_with_side_offset_LOD1.fbx using Guid(ea33750d8062a5f40853d5a678f98727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585d159defad469c3567a582e816ee59') in 0.047070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Hipster_Female_01.prefab
+  artifactKey: Guid(fe2234a2aed6c504ab0c225d7e1a1cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Hipster_Female_01.prefab using Guid(fe2234a2aed6c504ab0c225d7e1a1cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8b2b3325ea2a32b87573bcd3928034') in 0.129332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Prefab/Zombie/Zombie Walk 1.fbx
+  artifactKey: Guid(91908e281c77f51448d585111fc0eb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Zombie/Zombie Walk 1.fbx using Guid(91908e281c77f51448d585111fc0eb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3917179464a3bc0fe75695c7357a115a') in 0.037532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Punk_Female_01.prefab
+  artifactKey: Guid(eb1c725db5a403a40bd409a9bea29cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Punk_Female_01.prefab using Guid(eb1c725db5a403a40bd409a9bea29cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1159cea0affb8d0bf4a3b75b4dd20d0e') in 0.102050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/table_2.fbx
+  artifactKey: Guid(05e2bef7f8188c943aea2993fc97504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/table_2.fbx using Guid(05e2bef7f8188c943aea2993fc97504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec7a23041dfe1ff4a4b3ca4d50e1af1') in 0.039347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Meshes/Melee_Weapons/Sledge_Hammers/sledge_hammer_1.fbx
+  artifactKey: Guid(f9780dd1210ea0944af627c8ad6d7a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Meshes/Melee_Weapons/Sledge_Hammers/sledge_hammer_1.fbx using Guid(f9780dd1210ea0944af627c8ad6d7a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e6a46d86c0ad7031d0fa35b1acbb72c') in 0.045342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_BioHazardSuit_Male_01.prefab
+  artifactKey: Guid(cecba8cbb65991c42a1e7219f8210b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_BioHazardSuit_Male_01.prefab using Guid(cecba8cbb65991c42a1e7219f8210b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04bc10850d2529cf28998491b2364f48') in 0.117039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Machines/storage_container_big.prefab
+  artifactKey: Guid(c944460b7f1a8ef47b05ebec140bdd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Machines/storage_container_big.prefab using Guid(c944460b7f1a8ef47b05ebec140bdd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44027be3d1ff54eb3d0039fa6a337fef') in 0.031173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Gangster_Male_01.prefab
+  artifactKey: Guid(5090368b8e8213146ba1934c73da6149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Gangster_Male_01.prefab using Guid(5090368b8e8213146ba1934c73da6149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69597d1d59622ba6b7685b05d894df22') in 0.120504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Prefab/Zombie/Zombie_Police_Male_01.prefab
+  artifactKey: Guid(a255c04b254f915499253ca114a01ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Zombie/Zombie_Police_Male_01.prefab using Guid(a255c04b254f915499253ca114a01ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e136adf39f358f34f54356a74d32639') in 0.195866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/stairs_small.fbx
+  artifactKey: Guid(bd0a17be9280439418203fe96116cee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/stairs_small.fbx using Guid(bd0a17be9280439418203fe96116cee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e940906b2b39dd2f0bc0b63fee7d8c') in 0.031781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Download/Subway Metro Station/Prefabs/StairA.prefab
+  artifactKey: Guid(a71b3e6f5f99520439bdba5f5f866b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Subway Metro Station/Prefabs/StairA.prefab using Guid(a71b3e6f5f99520439bdba5f5f866b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c6f3eda21f3076e06338a9d4aeb5c6') in 0.035338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Prefabs/Models_Only/Mags/Sniper_03_Mag_Full.prefab
+  artifactKey: Guid(8ba289bcc451ad74392bcb3b34677306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Prefabs/Models_Only/Mags/Sniper_03_Mag_Full.prefab using Guid(8ba289bcc451ad74392bcb3b34677306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7487b2e7b5a3be2127ad70ca94422f13') in 0.028702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_far_plug.prefab
+  artifactKey: Guid(78417f9c0e3bda049a9a38dad7104d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_big_corner_far_plug.prefab using Guid(78417f9c0e3bda049a9a38dad7104d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d46878fccc378077506c26059288240') in 0.035771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Meshes/Melee_Weapons/Sledge_Hammers/sledge_hammer_3.fbx
+  artifactKey: Guid(4364dc616b635614a8847fb26e83fc39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Meshes/Melee_Weapons/Sledge_Hammers/sledge_hammer_3.fbx using Guid(4364dc616b635614a8847fb26e83fc39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9e13e5b9b2d9eb08829c68a3ecedf4') in 0.039306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Cheerleader_Female_01.prefab
+  artifactKey: Guid(4003093fe4a231c4d9c155a6540ec590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Cheerleader_Female_01.prefab using Guid(4003093fe4a231c4d9c155a6540ec590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36060b428c066d3fbd784e87c6bab466') in 0.107926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Demo_Scene_2/Stone 3.prefab
+  artifactKey: Guid(52449b29c85cb124d8ac60f534a23dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Demo_Scene_2/Stone 3.prefab using Guid(52449b29c85cb124d8ac60f534a23dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04272807865af6f760e36d0faa197c2e') in 0.031414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_LOD0.fbx
+  artifactKey: Guid(5647c0f14586b7548ada96096f07fbcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_LOD0.fbx using Guid(5647c0f14586b7548ada96096f07fbcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d3e847b97ce8b12fcdff663c2c3396') in 0.042556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Demo_Scene_Components/Meshes/Demo_Scene_2_Meshes/watchtower.fbx
+  artifactKey: Guid(26e91c226a4a08547897e72f4bf8a87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Demo_Scene_Components/Meshes/Demo_Scene_2_Meshes/watchtower.fbx using Guid(26e91c226a4a08547897e72f4bf8a87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afa928fb76e5e436ca9dcbaeaf06b9c') in 0.039299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_corner_with_emmision.prefab
+  artifactKey: Guid(88e2387d52f16a24bbf3a98f88f690c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Stairs/stairs_small_corner_with_emmision.prefab using Guid(88e2387d52f16a24bbf3a98f88f690c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafa994ee9dd993116be301dcfb29863') in 0.035860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_supplement.fbx
+  artifactKey: Guid(38ed7ae4620514843b4f091b3a03d54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_supplement.fbx using Guid(38ed7ae4620514843b4f091b3a03d54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17de01f42d05fff9d97b229b1983cf21') in 0.040480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Download/Subway Metro Station/Prefabs/WallLight.prefab
+  artifactKey: Guid(792ca66908b50964db9a6c6277e5b18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Subway Metro Station/Prefabs/WallLight.prefab using Guid(792ca66908b50964db9a6c6277e5b18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd7021444ab8806228905809afa6676') in 0.038427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/storage_container_small.fbx
+  artifactKey: Guid(d6354010388f6a94281a09f8fe9c6790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/storage_container_small.fbx using Guid(d6354010388f6a94281a09f8fe9c6790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81b2351e83a1a95497ec5fe75342559') in 0.029813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_SchoolGirl_Female_01.prefab
+  artifactKey: Guid(b7a521fe7dabb734a87b288a49e9b68b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_SchoolGirl_Female_01.prefab using Guid(b7a521fe7dabb734a87b288a49e9b68b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9a0bbb5294b0b0fe5d7a2739934c5a') in 0.143907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Download/PolygonZombies/Models/SM_Chr_Attach_Scissors_01.fbx
+  artifactKey: Guid(db9be9fc11559cb4aa9ab00f94d8d648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Models/SM_Chr_Attach_Scissors_01.fbx using Guid(db9be9fc11559cb4aa9ab00f94d8d648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3602785a1ed04c21b5b87c508eb53d14') in 0.036597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Police_Female_01.prefab
+  artifactKey: Guid(3ba6740ea34059446b2030cb1cee74bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Police_Female_01.prefab using Guid(3ba6740ea34059446b2030cb1cee74bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4cf65cf783c702efdac041671c0cbf7') in 0.141762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Walls/wall_big.prefab
+  artifactKey: Guid(b38a3290156af5046a449900e3163984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Walls/wall_big.prefab using Guid(b38a3290156af5046a449900e3163984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76831d6a657b1494a4fbe816dc6074c6') in 0.036962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Prefabs/Models_Only/Melee_Weapons/Sledge_Hammer_2.prefab
+  artifactKey: Guid(bd44faabd6a430f40aa9c1c26dbc4d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Prefabs/Models_Only/Melee_Weapons/Sledge_Hammer_2.prefab using Guid(bd44faabd6a430f40aa9c1c26dbc4d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b08551c6052c686654a51bb138ef03') in 0.022259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Download/MuzzleFlash/Prefabs/FireEffect 11.prefab
+  artifactKey: Guid(589c2a431a9fa3940b3648aeae4a0e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/MuzzleFlash/Prefabs/FireEffect 11.prefab using Guid(589c2a431a9fa3940b3648aeae4a0e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e63c8a474eea0a781f7330827446924') in 0.054540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Meshes/Mags/Sniper_02_Mags/sniper_02_mag_full.fbx
+  artifactKey: Guid(24122c9d47804ee43af36b65e608a24f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Meshes/Mags/Sniper_02_Mags/sniper_02_mag_full.fbx using Guid(24122c9d47804ee43af36b65e608a24f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929a5ed68aaa3d00c15193a718f95541') in 0.028934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_corner_plug.fbx
+  artifactKey: Guid(caed8062ac253ed45a27eed6a65cac17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_corner_plug.fbx using Guid(caed8062ac253ed45a27eed6a65cac17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0e4da422dff08890d5640ff42c9683') in 0.029879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Meshes/Guns/Sniper_03/sniper_03.fbx
+  artifactKey: Guid(5fdfd1fc1d2975f418ff18a8ee309d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Meshes/Guns/Sniper_03/sniper_03.fbx using Guid(5fdfd1fc1d2975f418ff18a8ee309d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c54ec64b7ee05d00fb2e9c95bfd915') in 0.091398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Businessman_Male_01.prefab
+  artifactKey: Guid(0e2c74548f9e2284aa68e9dc8544219c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Businessman_Male_01.prefab using Guid(0e2c74548f9e2284aa68e9dc8544219c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b7238ef5cc3538ecb919af603b8aec') in 0.116311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_with_side_LOD1.fbx
+  artifactKey: Guid(7dbc85eb39ce2b940b22b0063918e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_with_side_LOD1.fbx using Guid(7dbc85eb39ce2b940b22b0063918e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08f77eb5b100b0de198b6d8025f7581') in 0.047673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_blocker_2.fbx
+  artifactKey: Guid(d45302b75257c2e4cafc895bc8e34b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_blocker_2.fbx using Guid(d45302b75257c2e4cafc895bc8e34b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b36069b1ecb99ea37cae3e4192f8bc') in 0.041371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Firefighter_Male_01.prefab
+  artifactKey: Guid(7cb0205c5f7aeba45b91883f9425fcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Firefighter_Male_01.prefab using Guid(7cb0205c5f7aeba45b91883f9425fcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ce9d325d268af7551bf28ff8d87eff') in 0.198138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Demo_Scene_2/Stone 8.prefab
+  artifactKey: Guid(dda0435c9e39a7940aa267ba0bf01a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Demo_Scenes/Prefabs/Demo_Scene_2/Stone 8.prefab using Guid(dda0435c9e39a7940aa267ba0bf01a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50e18b6267fac314e949104c87fbfd4') in 0.024672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Download/PolygonZombies/Models/SM_Chr_Attach_Bar_01.fbx
+  artifactKey: Guid(c4843d3e29bdfe0409b7126572975657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Models/SM_Chr_Attach_Bar_01.fbx using Guid(c4843d3e29bdfe0409b7126572975657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482b8b0128bcfe32d4fb998a3381f628') in 0.030888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefab/Zombie/Zombie Attack.fbx
+  artifactKey: Guid(3d09412eb61b10d49b8083a7ff657c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Zombie/Zombie Attack.fbx using Guid(3d09412eb61b10d49b8083a7ff657c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e55310e7e259a60b838860d0ea32e3') in 0.043157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Demo_Scene_Components/Meshes/Demo_Scene_3_Meshes/workbench.fbx
+  artifactKey: Guid(6ba59dcb6d3badf4787f2455d8bd0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Demo_Scene_Components/Meshes/Demo_Scene_3_Meshes/workbench.fbx using Guid(6ba59dcb6d3badf4787f2455d8bd0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5efb04b284b8785caaf8aa51d1e9dbb6') in 0.047809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Download/MuzzleFlash/Prefabs/FireEffect 1.prefab
+  artifactKey: Guid(a83d9f9412159f344a893b54b6ee9693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/MuzzleFlash/Prefabs/FireEffect 1.prefab using Guid(a83d9f9412159f344a893b54b6ee9693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fbed7a465fb5a427431f14c12768911') in 0.035272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Prisoner_Male_01.prefab
+  artifactKey: Guid(fd7713efca146e545aafa284b89a051e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Prisoner_Male_01.prefab using Guid(fd7713efca146e545aafa284b89a051e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c54fd515c56ff32a17f228f39546cd0') in 0.152031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Download/Zombie_Animation/Zombie Attack.fbx
+  artifactKey: Guid(24d74f2a3a9c5e142a7625de179756da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Zombie_Animation/Zombie Attack.fbx using Guid(24d74f2a3a9c5e142a7625de179756da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72bd2af47728782dcfe8d7308e3273ff') in 0.017406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_LOD1.fbx
+  artifactKey: Guid(9c194dd4ed464d942a98b94222b7d507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_with_side_full_LOD1.fbx using Guid(9c194dd4ed464d942a98b94222b7d507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db75bf3422b9176487c6d9bcc4220c1') in 0.049557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Download/MuzzleFlash/Prefabs/FireEffect 12.prefab
+  artifactKey: Guid(fdc8e404bcd5faf43a8e5f1dab7a16ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/MuzzleFlash/Prefabs/FireEffect 12.prefab using Guid(fdc8e404bcd5faf43a8e5f1dab7a16ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f1674dd189da536d6291c3746f0989') in 0.051039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Download/PolygonZombies/Prefabs/Zombie_Coat_Female_01.prefab
+  artifactKey: Guid(5c839ac340cbdb44983d2d5b689eb849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/PolygonZombies/Prefabs/Zombie_Coat_Female_01.prefab using Guid(5c839ac340cbdb44983d2d5b689eb849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1320625d2e6e0e3f0c33256aa74c8c') in 0.139368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Meshes/Melee_Weapons/Wrenches/wrench_2.fbx
+  artifactKey: Guid(a328d884fdc885143b076d3b330ff62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Meshes/Melee_Weapons/Wrenches/wrench_2.fbx using Guid(a328d884fdc885143b076d3b330ff62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6ab93615d51cccb8cad3d5b77c4fe7') in 0.032704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Meshes/Guns/SMG_05/smg_05.fbx
+  artifactKey: Guid(7464456925b9c314ba6d0e3a414572ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Meshes/Guns/SMG_05/smg_05.fbx using Guid(7464456925b9c314ba6d0e3a414572ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb11061949deae0152ca2f6c0caa864') in 0.078300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Download/MuzzleFlash/Meshes/SM_DemoRoomU.FBX
+  artifactKey: Guid(809b4e56ae588034eb61c636fcb7035c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/MuzzleFlash/Meshes/SM_DemoRoomU.FBX using Guid(809b4e56ae588034eb61c636fcb7035c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d4fe87d79113264067a544ec36eb3c9') in 0.060007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Prefab/Zombie/Zombie Punching.fbx
+  artifactKey: Guid(fb1a80db0ae15c74694bbd7a4bdfb4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Zombie/Zombie Punching.fbx using Guid(fb1a80db0ae15c74694bbd7a4bdfb4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e42242fe2b0f2db60f6cfb7010da319') in 0.031768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_small.prefab
+  artifactKey: Guid(243f4abba039a1846ad345848e88725c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/window_small.prefab using Guid(243f4abba039a1846ad345848e88725c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4166ddcaed1c66db2b478702f9e6eaf9') in 0.033141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Download/MuzzleFlash/Prefabs/FireEffect 9.prefab
+  artifactKey: Guid(8c1a7fb08dadf054887e50f07e1a6133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/MuzzleFlash/Prefabs/FireEffect 9.prefab using Guid(8c1a7fb08dadf054887e50f07e1a6133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e1d9966c5bcafb8751c431f024a0e7') in 0.038184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_corner_LOD1.fbx
+  artifactKey: Guid(9d05b15ebc07ee144a18b52300023b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/window_big_corner_LOD1.fbx using Guid(9d05b15ebc07ee144a18b52300023b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162d082996bf7cab1d1ed9ede7df8d90') in 0.036396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Download/MuzzleFlash/Prefabs/FireEffect 5.prefab
+  artifactKey: Guid(583d60f74e4cf154a9b552300470ba71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/MuzzleFlash/Prefabs/FireEffect 5.prefab using Guid(583d60f74e4cf154a9b552300470ba71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8811982a97cb30937e34d4983c6b91') in 0.043591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Models/Sphere_32_extended.fbx
+  artifactKey: Guid(b77b89f9c619298419251cf7f172fcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Models/Sphere_32_extended.fbx using Guid(b77b89f9c619298419251cf7f172fcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd981f27aa6c4e779607748c01e85f1f8') in 0.031686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Meshes/Guns/SMG_04/smg_04.fbx
+  artifactKey: Guid(4c6fa96db7aacfa43a515bfd76a81626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Meshes/Guns/SMG_04/smg_04.fbx using Guid(4c6fa96db7aacfa43a515bfd76a81626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1499938589313b55449ba38a02109f') in 0.055703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner_far.prefab
+  artifactKey: Guid(b49fb96050ea0ad4790b0f550fb5f1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Sci-Fi Styled Modular Pack/Prefabs/Windows/Complete Windows/window_big_corner_far.prefab using Guid(b49fb96050ea0ad4790b0f550fb5f1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e5e434b685fc4166990a41543d70fe') in 0.029604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Download/Low Poly FPS Pack/Components/Meshes/Guns/SMG_02/smg_02.fbx
+  artifactKey: Guid(cfa7c596b0a48c74eb587c4e94979155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Download/Low Poly FPS Pack/Components/Meshes/Guns/SMG_02/smg_02.fbx using Guid(cfa7c596b0a48c74eb587c4e94979155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab5c76d85ce40413d91b760490704e8') in 0.063235 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

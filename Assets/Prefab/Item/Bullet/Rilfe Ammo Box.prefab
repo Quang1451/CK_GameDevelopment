@@ -130,4 +130,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kind: RifleAmmo
-  amount: 40
+  amount: 10

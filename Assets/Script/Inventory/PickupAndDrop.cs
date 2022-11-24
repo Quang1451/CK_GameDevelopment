@@ -27,7 +27,8 @@ public class PickupAndDrop : MonoBehaviour
     void Awake()
     {
         inventory = gameObject.GetComponent<GunsInventory>();
-        canPickup = false;        
+        canPickup = false;
+        timePickupGun = PlayerDataSetting.Instance.timePickupGun;    
     }
 
     // Update is called once per frame
@@ -74,7 +75,7 @@ public class PickupAndDrop : MonoBehaviour
                     PickAndDrop(inventory.GetSlotCurrentWeapon());
                     break;
             }
-        timePickupGun++;
+            timePickupGun++;
         }
         else {
             UseItem use = item.GetComponent<UseItem>();
@@ -149,5 +150,9 @@ public class PickupAndDrop : MonoBehaviour
     void SetActivateUI(bool aim, bool E_text) {
         UI_Aim.SetActive(aim);
         UI_E.SetActive(E_text);
+    }
+
+    public int GetTimePickup() {
+        return timePickupGun;
     }
 }

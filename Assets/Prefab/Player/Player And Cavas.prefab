@@ -160,11 +160,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4885235693230378269}
-    - target: {fileID: 5803462310299215066, guid: a05a5b3dd648093438aff84804bc9095,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a05a5b3dd648093438aff84804bc9095, type: 3}
 --- !u!1 &1409256903262377931 stripped
@@ -288,6 +283,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8652140697673063050}
     m_Modifications:
+    - target: {fileID: 107082498168480480, guid: 7f42e102ace6a174183e7cf9855023e8,
+        type: 3}
+      propertyPath: ammunitionDisplay
+      value: 
+      objectReference: {fileID: 4885235693398867823}
+    - target: {fileID: 694790801911435124, guid: 7f42e102ace6a174183e7cf9855023e8,
+        type: 3}
+      propertyPath: ammunitionDisplay
+      value: 
+      objectReference: {fileID: 4885235693398867823}
     - target: {fileID: 1231616179459798647, guid: 7f42e102ace6a174183e7cf9855023e8,
         type: 3}
       propertyPath: pauseUI
@@ -298,6 +303,16 @@ PrefabInstance:
       propertyPath: optionUI
       value: 
       objectReference: {fileID: 8845567528362897959}
+    - target: {fileID: 3579555843410228417, guid: 7f42e102ace6a174183e7cf9855023e8,
+        type: 3}
+      propertyPath: ammunitionDisplay
+      value: 
+      objectReference: {fileID: 4885235693398867823}
+    - target: {fileID: 7642642511801377185, guid: 7f42e102ace6a174183e7cf9855023e8,
+        type: 3}
+      propertyPath: ammunitionDisplay
+      value: 
+      objectReference: {fileID: 4885235693398867823}
     - target: {fileID: 8360601633930164669, guid: 7f42e102ace6a174183e7cf9855023e8,
         type: 3}
       propertyPath: grenadeDisplay
@@ -333,26 +348,6 @@ PrefabInstance:
       propertyPath: UI_Aim
       value: 
       objectReference: {fileID: 4885235692991109594}
-    - target: {fileID: 8360601633987898738, guid: 7f42e102ace6a174183e7cf9855023e8,
-        type: 3}
-      propertyPath: ammunitionDisplay
-      value: 
-      objectReference: {fileID: 4885235693398867823}
-    - target: {fileID: 8360601634064767310, guid: 7f42e102ace6a174183e7cf9855023e8,
-        type: 3}
-      propertyPath: ammunitionDisplay
-      value: 
-      objectReference: {fileID: 4885235693398867823}
-    - target: {fileID: 8360601634095744399, guid: 7f42e102ace6a174183e7cf9855023e8,
-        type: 3}
-      propertyPath: ammunitionDisplay
-      value: 
-      objectReference: {fileID: 4885235693398867823}
-    - target: {fileID: 8360601634221772411, guid: 7f42e102ace6a174183e7cf9855023e8,
-        type: 3}
-      propertyPath: ammunitionDisplay
-      value: 
-      objectReference: {fileID: 4885235693398867823}
     - target: {fileID: 8360601634569919068, guid: 7f42e102ace6a174183e7cf9855023e8,
         type: 3}
       propertyPath: m_Name
@@ -418,7 +413,7 @@ PrefabInstance:
       propertyPath: HealthDisplay
       value: 
       objectReference: {fileID: 4885235693189332146}
-    - target: {fileID: 8360601634838511174, guid: 7f42e102ace6a174183e7cf9855023e8,
+    - target: {fileID: 8909616345522491640, guid: 7f42e102ace6a174183e7cf9855023e8,
         type: 3}
       propertyPath: ammunitionDisplay
       value: 

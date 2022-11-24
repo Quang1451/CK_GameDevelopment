@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PlayerData : MonoBehaviour
@@ -26,11 +27,9 @@ public class PlayerData : MonoBehaviour
     [Header("Graphic")]
     public TextMeshProUGUI HealthDisplay;
 
-    private bool isDead;
 
     void Awake() {
         health = PlayerDataSetting.Instance.Health;
-        isDead = false;
     }
 
     void Update() {
@@ -51,7 +50,7 @@ public class PlayerData : MonoBehaviour
     }
  
     public void Die() {
-        isDead = true;
+        SceneManager.LoadScene(4);
     }
 
     public void TakeDamage(int damage) {
