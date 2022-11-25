@@ -15,6 +15,7 @@ TagManager:
   - GasTank
   - ExplosionItem
   - Target
+  - Button
   layers:
   - Default
   - TransparentFX

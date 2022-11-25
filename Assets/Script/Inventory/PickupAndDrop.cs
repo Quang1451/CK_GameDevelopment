@@ -48,12 +48,10 @@ public class PickupAndDrop : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, distance, layerMask)) {
             item = hit.transform.gameObject;
-            //item.GetComponent<Outline>().enabled = true;
             canPickup = true;
             SetActivateUI(false,true);
         }
         else if(item != null) {
-            //item.GetComponent<Outline>().enabled = false;
             canPickup = false;
             item = null;
             SetActivateUI(true,false);
@@ -62,7 +60,13 @@ public class PickupAndDrop : MonoBehaviour
 
     //Nhặt súng và các vật phẩm hỗ trợ
     void Pickup() {
-        if(item.tag == "Guns") {
+        if(item.tag == "Button") {
+            EventOpenDoor e = item.GetComponent<EventOpenDoor>();
+            e.StartEvent();
+            item = null;
+            return;
+        }
+        else if(item.tag == "Guns") {
             GunItem gun = item.GetComponent<GunItem>();
             switch (timePickupGun) {
                 case 0:

@@ -16,6 +16,7 @@ public class SingletonScriptableObject<T> : ScriptableObject where T: Scriptable
                     Debug.LogError("Multiple instances of the singleton scriptable object found in the resrouces,");
                 }
                 _instance = assets[0];
+                _instance.hideFlags = HideFlags.DontUnloadUnusedAsset;
             }
             return _instance;
         }
