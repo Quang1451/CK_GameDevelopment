@@ -16,6 +16,7 @@ public class ZombieAI : MonoBehaviour
     float turnSpeed = 5f;
     [SerializeField]
     float attackTime = 3.033f;
+
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
