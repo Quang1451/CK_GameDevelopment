@@ -188,8 +188,11 @@ public class PlayerController : MonoBehaviour
                 _resetAttack = Time.time + timeResetAttack1;
             }
             Collider[] hit = Physics.OverlapSphere(knifeAttackPoint.transform.position,0.15f);
-            foreach(Collider enemy in hit) {
-                Debug.Log(enemy.gameObject.tag);
+            foreach(Collider col in hit) {
+                if(col.gameObject.tag == "Enemy") {
+                    EnemyHealth enemy = col.GetComponent<EnemyHealth>();
+                    enemy.LoseHeal(Random.Range(40,70));
+                }
             }
         }
     }
