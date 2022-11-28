@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,19 +24,21 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Mesh[] skin;
     [SerializeField] private SkinnedMeshRenderer meshRender;
+    [SerializeField] private AudioClip clip;
 
+    private AudioSource audioSource;
     private EnemyHealth enemyHealth;
     private Animator animator;
     private AIStates currentState = AIStates.Idle;
     private Vector3 destination = Vector3.zero;
 
     private NavMeshAgent agent;
-    public Vector3 target;
+    private Vector3 target;
 
     float m_WaitTime =-1;
     float m_ResetAttack =-1;
 
-    bool isDead, attacking = false;
+    bool isDead = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -47,6 +48,7 @@ public class EnemyAI : MonoBehaviour
         agent.isStopped = false;
         
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         animator.SetBool("IsWalking", false);
         animator.SetBool("IsDead", false);
@@ -64,7 +66,6 @@ public class EnemyAI : MonoBehaviour
         //Kiểm tra enemy hết máu hay không
         if(enemyHealth.checkEnemyDead()) {
             currentState = AIStates.Dead;
-            isDead = true;
         }
         else {
             //Kiểm tra nếu player trong vùng chasing của zombie
@@ -125,15 +126,13 @@ public class EnemyAI : MonoBehaviour
 
     void DoChasing() {
         animator.SetBool("IsWalking", true);
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target), speedRotate * Time.deltaTime);
         agent.SetDestination(target);
         agent.updatePosition = true;
-        
     }
 
     void DoAttack() {
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target), speedRotate * Time.deltaTime);
         if(m_ResetAttack < 0) {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target), speedRotate * Time.deltaTime);
             animator.Play("Zombie_Punch");
             Invoke("CheckAttackRange", 1);
         
@@ -160,7 +159,10 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("IsWalking", false);
         animator.SetBool("IsDead", true);
         agent.SetDestination(transform.position);
+        if(!audioSource.isPlaying && !isDead)
+            AudioManager.Instance.PlayAudio(audioSource, clip);
         gameObject.GetComponent<CapsuleCollider>().enabled = false;
+        isDead = true;
         Destroy(gameObject,10);
     }
 
@@ -181,5 +183,9 @@ public class EnemyAI : MonoBehaviour
         // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, 1.5f);
+    }
+
+    public void SetChasing() {
+        currentState = AIStates.Chasing;
     }
 }
