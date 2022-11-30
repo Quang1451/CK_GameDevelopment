@@ -1,21 +1,21 @@
 {
-    "Health": 97,
-    "RifleAmmo": 0,
-    "ShotgunAmmo": 0,
-    "SubmachineAmmo": 0,
-    "PistolAmmo": 0,
-    "Grenade": 0,
+    "Health": 157,
+    "RifleAmmo": 13,
+    "ShotgunAmmo": 37,
+    "SubmachineAmmo": 140,
+    "PistolAmmo": 226,
+    "Grenade": 1,
     "Map": 3,
-    "timePickupGun": 1,
+    "timePickupGun": 4,
     "GunsHaving": [
         {
-            "instanceID": 45588
+            "instanceID": 133158
         },
         {
-            "instanceID": 71240
+            "instanceID": 133150
         },
         {
-            "instanceID": 0
+            "instanceID": 133152
         }
     ]
 }

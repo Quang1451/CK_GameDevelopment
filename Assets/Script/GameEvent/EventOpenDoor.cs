@@ -42,6 +42,5 @@ public class EventOpenDoor : MonoBehaviour
             GameObject zombie2 = Instantiate(zb, PointSpawnZombies[1].position, Quaternion.identity);
             zombie2.GetComponent<EnemyAI>().SetChasing();
         }
-
     }
 }

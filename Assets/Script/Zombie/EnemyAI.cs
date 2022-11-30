@@ -131,7 +131,6 @@ public class EnemyAI : MonoBehaviour
     }
 
     void DoAttack() {
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target), speedRotate * Time.deltaTime);
         if(m_ResetAttack < 0) {
             animator.Play("Zombie_Punch");
             Invoke("CheckAttackRange", 1);
