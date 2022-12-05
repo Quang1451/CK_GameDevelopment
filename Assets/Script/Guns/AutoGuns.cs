@@ -43,7 +43,7 @@ public abstract class AutoGuns : MonoBehaviour
 
     void OnEnable() {
         if(audioSource2 != null)
-            AudioManager.Instance.PlayAudio(audioSource2, audioSource2.clip);
+            AudioManager.instance.PlayAudio(audioSource2, audioSource2.clip);
     }
     
     public void Awake() {
@@ -76,7 +76,7 @@ public abstract class AutoGuns : MonoBehaviour
         //Kiểm tra player bấm nut nạp đạn
         if(Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading && bulletsPertap > 0){
             animator.Play("Reload Ammo Left");
-            AudioManager.Instance.PlayAudio(audioSource, gunSounds[1]);
+            AudioManager.instance.PlayAudio(audioSource, gunSounds[1]);
             /* audioSource.clip = gunSounds[1];
             audioSource.Play(); */
             Reload();
@@ -86,7 +86,7 @@ public abstract class AutoGuns : MonoBehaviour
         //Tự động nạp đạn khi hết đạn
         if(readyToShoot && !reloading && bulletsLeft <= 0 && bulletsPertap > 0) {
             animator.Play("Reload Out Of Ammo");
-            AudioManager.Instance.PlayAudio(audioSource, gunSounds[2]);
+            AudioManager.instance.PlayAudio(audioSource, gunSounds[2]);
             /* audioSource.clip = gunSounds[2];
             audioSource.Play(); */
             Reload();
@@ -95,7 +95,7 @@ public abstract class AutoGuns : MonoBehaviour
         //Kiểm tra player có nhấn phím bấn và sẵn sàng bắn
         if(readyToShoot && shooting && !reloading && bulletsLeft > 0) {
             Shoot();
-            AudioManager.Instance.PlayAudio(audioSource, gunSounds[0]);
+            AudioManager.instance.PlayAudio(audioSource, gunSounds[0]);
             /* audioSource.clip = gunSounds[0];
             audioSource.Play(); */
             if(Input.GetKey(KeyCode.Mouse1))

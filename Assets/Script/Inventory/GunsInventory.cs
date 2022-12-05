@@ -18,13 +18,13 @@ public class GunsInventory : MonoBehaviour
     public int rifleAmmo, shotgunAmmo, submachineAmmo, pistolAmmo, grenade;
     void Awake()
     {
-        rifleAmmo = PlayerDataSetting.Instance.RifleAmmo;
-        shotgunAmmo = PlayerDataSetting.Instance.ShotgunAmmo;
-        submachineAmmo = PlayerDataSetting.Instance.SubmachineAmmo;
-        pistolAmmo = PlayerDataSetting.Instance.PistolAmmo;
-        grenade = PlayerDataSetting.Instance.Grenade;
+        rifleAmmo = PlayerDataSetting.instance.RifleAmmo;
+        shotgunAmmo = PlayerDataSetting.instance.ShotgunAmmo;
+        submachineAmmo = PlayerDataSetting.instance.SubmachineAmmo;
+        pistolAmmo = PlayerDataSetting.instance.PistolAmmo;
+        grenade = PlayerDataSetting.instance.Grenade;
         //Đặt súng lục làm súng mặc định
-        gunsHaving = PlayerDataSetting.Instance.GunsHaving;
+        gunsHaving = PlayerDataSetting.instance.GunsHaving;
         
         currentWeapon = 0;
 

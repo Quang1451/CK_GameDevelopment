@@ -17,18 +17,18 @@ public class MenuControll : MonoBehaviour
     private string levelToLoad;
     
     public void NewGameDialogYes(){
-        PlayerDataSetting.Instance.DefaultData();
+        PlayerDataSetting.instance.DefaultData();
 
         SaveData save = new SaveData();
-        save.Health =  PlayerDataSetting.Instance.Health;
-        save.RifleAmmo = PlayerDataSetting.Instance.RifleAmmo;
-        save.ShotgunAmmo = PlayerDataSetting.Instance.ShotgunAmmo;
-        save.SubmachineAmmo= PlayerDataSetting.Instance.SubmachineAmmo;
-        save.PistolAmmo = PlayerDataSetting.Instance.PistolAmmo;
-        save.Grenade = PlayerDataSetting.Instance.Grenade;
-        save.timePickupGun = PlayerDataSetting.Instance.timePickupGun;
-        save.Map = PlayerDataSetting.Instance.Map;
-        save.GunsHaving = PlayerDataSetting.Instance.GunsHaving;
+        save.Health =  PlayerDataSetting.instance.Health;
+        save.RifleAmmo = PlayerDataSetting.instance.RifleAmmo;
+        save.ShotgunAmmo = PlayerDataSetting.instance.ShotgunAmmo;
+        save.SubmachineAmmo= PlayerDataSetting.instance.SubmachineAmmo;
+        save.PistolAmmo = PlayerDataSetting.instance.PistolAmmo;
+        save.Grenade = PlayerDataSetting.instance.Grenade;
+        save.timePickupGun = PlayerDataSetting.instance.timePickupGun;
+        save.Map = PlayerDataSetting.instance.Map;
+        save.GunsHaving = PlayerDataSetting.instance.GunsHaving;
 
         string json = JsonUtility.ToJson(save, true);
         File.WriteAllText(Application.dataPath+"/Player.json",json);
@@ -40,8 +40,8 @@ public class MenuControll : MonoBehaviour
         if(System.IO.File.Exists(Application.dataPath+"/Player.json")){
             string json = File.ReadAllText(Application.dataPath+"/Player.json");
             SaveData value = JsonUtility.FromJson<SaveData>(json);
-            PlayerDataSetting.Instance.GetLoadData(value);
-            load.loadingScreen(PlayerDataSetting.Instance.Map);
+            PlayerDataSetting.instance.GetLoadData(value);
+            load.loadingScreen(PlayerDataSetting.instance.Map);
         }
         else{
             noSavedGameDialog.SetActive(true);

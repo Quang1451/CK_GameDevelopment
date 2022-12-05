@@ -176,13 +176,13 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.F) && Time.time > _resetAttack) {
             if(Time.time < _resetCombo) {
                 animator.Play("Knife Attack 1");
-                AudioManager.Instance.PlayAudio(knifeSource, dataPlayer.knifeSounds[1]);
+                AudioManager.instance.PlayAudio(knifeSource, dataPlayer.knifeSounds[1]);
                 
                 _resetAttack = Time.time + timeResetAttack2;
             }
             else{
                 animator.Play("Knife Attack 2");
-                AudioManager.Instance.PlayAudio(knifeSource, dataPlayer.knifeSounds[0]);
+                AudioManager.instance.PlayAudio(knifeSource, dataPlayer.knifeSounds[0]);
                 
                 _resetCombo = Time.time + timeInCombo;
                 _resetAttack = Time.time + timeResetAttack1;
@@ -199,7 +199,7 @@ public class PlayerController : MonoBehaviour
     
     void ThrowGrenade() {
         if (Input.GetKeyDown(KeyCode.G) && Time.time > _resetThrow && inventory.CheckHasGrenade()) {
-            AudioManager.Instance.PlayAudio(throwSourse, (dataPlayer.throwSounds)[Random.Range(0,(dataPlayer.throwSounds).Length)]);
+            AudioManager.instance.PlayAudio(throwSourse, (dataPlayer.throwSounds)[Random.Range(0,(dataPlayer.throwSounds).Length)]);
           
             Invoke("Throw",0.5f);
             _resetThrow = Time.time + timeResetThorw;

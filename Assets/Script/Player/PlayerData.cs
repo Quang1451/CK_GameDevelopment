@@ -29,7 +29,7 @@ public class PlayerData : MonoBehaviour
 
 
     void Awake() {
-        health = PlayerDataSetting.Instance.Health;
+        health = PlayerDataSetting.instance.Health;
     }
 
     void Update() {

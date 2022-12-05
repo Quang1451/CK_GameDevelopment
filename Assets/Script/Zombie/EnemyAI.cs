@@ -159,7 +159,7 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("IsDead", true);
         agent.SetDestination(transform.position);
         if(!audioSource.isPlaying && !isDead)
-            AudioManager.Instance.PlayAudio(audioSource, clip);
+            AudioManager.instance.PlayAudio(audioSource, clip);
         gameObject.GetComponent<CapsuleCollider>().enabled = false;
         isDead = true;
         Destroy(gameObject,10);

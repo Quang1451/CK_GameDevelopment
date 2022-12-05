@@ -14,8 +14,8 @@ public class GameOverMenu : MonoBehaviour
     public void Reset() {
         string json = File.ReadAllText(Application.dataPath+"/Player.json");
         SaveData value = JsonUtility.FromJson<SaveData>(json);
-        PlayerDataSetting.Instance.GetLoadData(value);
-        load.loadingScreen(PlayerDataSetting.Instance.Map);
+        PlayerDataSetting.instance.GetLoadData(value);
+        load.loadingScreen(PlayerDataSetting.instance.Map);
     }
 
     public void Menu() {

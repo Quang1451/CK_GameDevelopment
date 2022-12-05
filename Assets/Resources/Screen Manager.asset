@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 8bc9a63e6dfc19a4f94742382ab24fca, type: 3}
   m_Name: Screen Manager
-  m_EditorClassIdentifier: Assembly-CSharp::ScreenManager
+  m_EditorClassIdentifier: 
   optionScreen: 21
   isFullScreen: 1
   DefaulFullScreen: 1

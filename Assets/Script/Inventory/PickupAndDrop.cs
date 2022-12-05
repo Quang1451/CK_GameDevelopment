@@ -28,7 +28,7 @@ public class PickupAndDrop : MonoBehaviour
     {
         inventory = gameObject.GetComponent<GunsInventory>();
         canPickup = false;
-        timePickupGun = PlayerDataSetting.Instance.timePickupGun;    
+        timePickupGun = PlayerDataSetting.instance.timePickupGun;    
     }
 
     // Update is called once per frame

@@ -36,10 +36,10 @@ public class OptionMenu : MonoBehaviour
     }
 
     void OnEnable() {
-        volumeSlider.value = AudioManager.Instance.volume;
-        volumeTextValue.text = AudioManager.Instance.volume.ToString("0.00");
-        resolutionDropdown.value = ScreenManager.Instance.optionScreen;
-        reesolutionToggle.isOn = ScreenManager.Instance.isFullScreen;
+        volumeSlider.value = AudioManager.instance.volume;
+        volumeTextValue.text = AudioManager.instance.volume.ToString("0.00");
+        resolutionDropdown.value = ScreenManager.instance.optionScreen;
+        reesolutionToggle.isOn = ScreenManager.instance.isFullScreen;
     }
 
     public void ChangAnimation(int valueChange){
@@ -48,14 +48,14 @@ public class OptionMenu : MonoBehaviour
         }
         if(valueChange == 1){
             animator.CrossFade("SoundButtonClick", 0.5f,0);
-            volumeSlider.value = AudioManager.Instance.volume;
-            volumeTextValue.text = AudioManager.Instance.volume.ToString("0.00");
+            volumeSlider.value = AudioManager.instance.volume;
+            volumeTextValue.text = AudioManager.instance.volume.ToString("0.00");
 
         }
         if(valueChange == 2){
             animator.CrossFade("GraphicsButtonClick", 0.5f,0);
-            resolutionDropdown.value = ScreenManager.Instance.optionScreen;
-            reesolutionToggle.isOn = ScreenManager.Instance.isFullScreen;
+            resolutionDropdown.value = ScreenManager.instance.optionScreen;
+            reesolutionToggle.isOn = ScreenManager.instance.isFullScreen;
         }
         if(valueChange == 3){
             animator.CrossFade("GamePlayButtonClick", 0.5f,0);
@@ -78,7 +78,7 @@ public class OptionMenu : MonoBehaviour
     }
     //Đặt âm thanh đã điều chỉnh
     public void VolumeApply(){
-        AudioManager.Instance.volume = settingVolume;
+        AudioManager.instance.volume = settingVolume;
     }
 
     //Điều chỉnh đồ họa
@@ -87,16 +87,16 @@ public class OptionMenu : MonoBehaviour
     }
 
     public void SetDefaultGraphic() {
-        isFullScreen = ScreenManager.Instance.DefaulFullScreen;
-        currentResolution = ScreenManager.Instance.DefalultoptionScreen;
+        isFullScreen = ScreenManager.instance.DefaulFullScreen;
+        currentResolution = ScreenManager.instance.DefalultoptionScreen;
         reesolutionToggle.isOn = isFullScreen;
         resolutionDropdown.value = currentResolution;
     }
 
     public void GracphicApply() {
         isFullScreen = reesolutionToggle.isOn;
-        ScreenManager.Instance.isFullScreen = isFullScreen;
-        ScreenManager.Instance.optionScreen = currentResolution;
-        Screen.SetResolution(resolutions[currentResolution].width, resolutions[currentResolution].height, ScreenManager.Instance.isFullScreen);
+        ScreenManager.instance.isFullScreen = isFullScreen;
+        ScreenManager.instance.optionScreen = currentResolution;
+        Screen.SetResolution(resolutions[currentResolution].width, resolutions[currentResolution].height, ScreenManager.instance.isFullScreen);
     }
 }

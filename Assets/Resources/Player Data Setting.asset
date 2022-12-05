@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 32
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -16,9 +16,9 @@ MonoBehaviour:
   RifleAmmo: 0
   ShotgunAmmo: 0
   SubmachineAmmo: 0
-  PistolAmmo: 30
-  Grenade: 3
-  Map: 1
+  PistolAmmo: 0
+  Grenade: 0
+  Map: 0
   timePickupGun: 0
   GunsHaving:
   - {fileID: 5589502383661578776, guid: df4e9f4291eb9cc4490ad5e0eb157e4d, type: 3}

@@ -28,7 +28,7 @@ public class EventOpenDoor : MonoBehaviour
     IEnumerator Open() {
         while(Door.transform.position.y < target.y) {
             if(!source.isPlaying) {
-                AudioManager.Instance.PlayAudio(source,clip);
+                AudioManager.instance.PlayAudio(source,clip);
             }
             Door.transform.position = Vector3.Lerp(Door.transform.position, target, 0.01f * Time.deltaTime);        
             yield return null;
